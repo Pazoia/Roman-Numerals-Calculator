@@ -8,6 +8,8 @@ Build a calculator that takes roman numerals, and return the results also in rom
 | :-----: | :----: |
 |  I + I  |   II   |
 | II \* V |   X    |
+|  V - I  |   IV   |
+| IV / II |   II   |
 
 # Technologies
 
