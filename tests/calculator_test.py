@@ -8,3 +8,6 @@ def test_multiplication_of_two_roman_numerals():
 
 def test_subtraction_of_two_roman_numerals():
     assert Calculator.subtract("V", "I") == "IV"
+
+def test_division_of_two_roman_numerals():
+    assert Calculator.divide("IV", "II") == "II"
