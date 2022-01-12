@@ -11,4 +11,8 @@ class Calculator:
         result = roman_numerals[roman_num_1] * roman_numerals[roman_num_2]
         return get_key(result)
 
+    def subtract(roman_num_1, roman_num_2):
+        result = roman_numerals[roman_num_1] - roman_numerals[roman_num_2]
+        return get_key(result)
+
     
