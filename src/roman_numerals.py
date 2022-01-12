@@ -1,3 +1,8 @@
+def get_key(val):
+        for key, value in roman_numerals.items():
+            if val == value:
+                return key
+
 roman_numerals = {
         "I": 1,
         "II": 2,
