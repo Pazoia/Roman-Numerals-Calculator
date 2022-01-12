@@ -4,6 +4,12 @@
 
 Build a calculator that takes roman numerals, and return the results also in roman numerals.
 
+Results are always presented in Capital Letters
+
+Edge cases:
+
+If a user give lower case letter as the input.
+
 |  Input  | Output Lower than 10 |
 | :-----: | :------------------: |
 |  I + I  |          II          |
