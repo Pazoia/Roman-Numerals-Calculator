@@ -10,21 +10,24 @@ Edge cases:
 
 If a user give lower case letter as the input.
 
-input_roman_num_validator tests
+> **input_roman_num_validator tests**
 
 - input is in roman_numerals_to_integer dictionary
 
 | Input | Output value |
 | :---: | :----------: |
 |   I   |    ✅ - 1    |
+|  IV   |    ✅ - 4    |
 
 - input is not in roman_numerals_to_integer dictionary
+- input with multiple characters
 
 | Input | Output value |
 | :---: | :----------: |
-|  XI   |      11      |
+|  XV   |   ✅ - 15    |
+|  XX   |   ✅ - 20    |
 
-calculator tests
+> **calculator tests**
 
 |  Input  | Output Lower or equals to 10 |
 | :-----: | :--------------------------: |
