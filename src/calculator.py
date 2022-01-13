@@ -1,12 +1,17 @@
 from .roman_numerals import roman_numerals_to_integer
 from .roman_numerals import integer_to_roman_numerals
+from functools import reduce
 
 class Calculator:
 
     def add(*args):
-        result = 0
+        values = []
+
         for roman_num in args:
-            result += roman_numerals_to_integer[roman_num]
+            values.append(roman_numerals_to_integer[roman_num])
+        
+        result = reduce(lambda x, y: x+y, values)
+
         if result <= 10:
             return integer_to_roman_numerals[result]
         elif result > 10 and result <= 19:
@@ -24,21 +29,30 @@ class Calculator:
 
 
     def multiply(*args):
-        result = 0
+        values = []
+        
         for roman_num in args:
-            result += roman_numerals_to_integer[roman_num]
+            values.append(roman_numerals_to_integer[roman_num])
+        
+        result = reduce(lambda x, y: x*y, values)
         return integer_to_roman_numerals[result]
 
     def subtract(*args):
-        result = 0
+        values = []
+        
         for roman_num in args:
-            result += roman_numerals_to_integer[roman_num]
+            values.append(roman_numerals_to_integer[roman_num])
+        
+        result = reduce(lambda x, y: x-y, values)
         return integer_to_roman_numerals[result]
 
     def divide(*args):
-        result = 0
+        values = []
+        
         for roman_num in args:
-            result += roman_numerals_to_integer[roman_num]
+            values.append(roman_numerals_to_integer[roman_num])
+        
+        result = reduce(lambda x, y: x/y, values)
         return integer_to_roman_numerals[result]
 
     
