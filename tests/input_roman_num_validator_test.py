@@ -1,0 +1,5 @@
+from src.input_roman_numeral_validator import roman_num_validator
+
+def test_roman_num_provided_is_in_roman_numerals_to_integer():
+    assert roman_num_validator("I") == 1
+    assert roman_num_validator("IV") == 4

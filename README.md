@@ -16,7 +16,7 @@ input_roman_num_validator tests
 
 | Input | Output value |
 | :---: | :----------: |
-|   I   |      1       |
+|   I   |    ✅ - 1    |
 
 - input is not in roman_numerals_to_integer dictionary
 
