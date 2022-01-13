@@ -20,7 +20,7 @@ If a user give lower case letter as the input.
 |     Input     |        Output betwen 11 and 99        |
 | :-----------: | :-----------------------------------: |
 |    X + IV     | ✅ - ( XIV ) output between 11 and 19 |
-|     X + X     |          ( XX ) output is 20          |
+|     X + X     |       ✅ - ( XX ) output is 20        |
 |   X + XIII    |  ( XXIII ) output between 21 and 29   |
 |    XX + X     |         ( XXX ) output is 30          |
 |   X + XXVI    |  ( XXXVI ) output between 31 and 39   |
