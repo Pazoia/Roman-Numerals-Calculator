@@ -12,20 +12,18 @@ If a user give lower case letter as the input.
 
 > **input_roman_num_validator tests**
 
-- input is in roman_numerals_to_integer dictionary
+> input is in roman_numerals_to_integer dictionary
 
 | Input | Output value |
 | :---: | :----------: |
 |   I   |    ✅ - 1    |
-|  IV   |    ✅ - 4    |
 
-- input is not in roman_numerals_to_integer dictionary
-- input with multiple characters
+> input is not in roman_numerals_to_integer dictionary  
+> input with multiple characters
 
 | Input | Output value |
 | :---: | :----------: |
 |  XV   |   ✅ - 15    |
-|  XX   |   ✅ - 20    |
 | XXIV  |      24      |
 | XLIX  |      49      |
 
