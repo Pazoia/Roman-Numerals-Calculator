@@ -26,6 +26,8 @@ If a user give lower case letter as the input.
 | :---: | :----------: |
 |  XV   |   ✅ - 15    |
 |  XX   |   ✅ - 20    |
+| XXIV  |      24      |
+| XLIX  |      49      |
 
 > **calculator tests**
 
