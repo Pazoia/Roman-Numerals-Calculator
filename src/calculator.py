@@ -2,9 +2,11 @@ from .roman_numerals import roman_numerals_to_integer
 from .roman_numerals import integer_to_roman_numerals
 
 class Calculator:
-    
-    def add(roman_num_1, roman_num_2):
-        result = roman_numerals_to_integer[roman_num_1] + roman_numerals_to_integer[roman_num_2]
+
+    def add(*args):
+        result = 0
+        for roman_num in args:
+            result += roman_numerals_to_integer[roman_num]
         if result <= 10:
             return integer_to_roman_numerals[result]
         elif result > 10 and result <= 19:
@@ -21,16 +23,22 @@ class Calculator:
                 return result
 
 
-    def multiply(roman_num_1, roman_num_2):
-        result = roman_numerals_to_integer[roman_num_1] * roman_numerals_to_integer[roman_num_2]
+    def multiply(*args):
+        result = 0
+        for roman_num in args:
+            result += roman_numerals_to_integer[roman_num]
         return integer_to_roman_numerals[result]
 
-    def subtract(roman_num_1, roman_num_2):
-        result = roman_numerals_to_integer[roman_num_1] - roman_numerals_to_integer[roman_num_2]
+    def subtract(*args):
+        result = 0
+        for roman_num in args:
+            result += roman_numerals_to_integer[roman_num]
         return integer_to_roman_numerals[result]
 
-    def divide(roman_num_1, roman_num_2):
-        result = roman_numerals_to_integer[roman_num_1] / roman_numerals_to_integer[roman_num_2]
+    def divide(*args):
+        result = 0
+        for roman_num in args:
+            result += roman_numerals_to_integer[roman_num]
         return integer_to_roman_numerals[result]
 
     
