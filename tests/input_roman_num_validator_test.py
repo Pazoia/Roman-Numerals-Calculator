@@ -1,9 +1,10 @@
 from src.input_roman_numeral_validator import roman_num_validator
+import pytest
 
-def test_returns_correct_integer_when_in_roman_numerals_to_integer():
-    assert roman_num_validator("I") == 1
-    assert roman_num_validator("IV") == 4
+@pytest.mark.parametrize("roman_num, expected_integer", [
+    pytest.param("I", 1, id="when_in_roman_numerals_to_integer"),
+    pytest.param("XV", 15, id="when_not_in_roman_numerals_to_integer_and_roman_num_with_2_chars"),
+])
 
-def test_when_not_in_roman_numerals_to_integer_and_roman_num_with_2_letters():
-    assert roman_num_validator("XV") == 15
-    assert roman_num_validator("XX") == 20
+def test_returns_correct_integer(roman_num, expected_integer):
+    assert roman_num_validator(roman_num) == expected_integer
