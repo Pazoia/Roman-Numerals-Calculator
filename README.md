@@ -24,7 +24,8 @@ If a user give lower case letter as the input.
 | Input | Output value |
 | :---: | :----------: |
 |  XV   |   ✅ - 15    |
-| XXIV  |      24      |
+| XXIV  |   ✅ - 24    |
+| XXIX  |   ✅ - 29    |
 | XLIX  |      49      |
 
 > **calculator tests**
