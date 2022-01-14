@@ -21,12 +21,15 @@ If a user give lower case letter as the input.
 > input is not in roman_numerals_to_integer dictionary  
 > input with multiple characters
 
-| Input | Output value |
-| :---: | :----------: |
-|  XV   |   ✅ - 15    |
-| XXIV  |   ✅ - 24    |
-| XXIX  |   ✅ - 29    |
-| XLIX  |      49      |
+| Input  | Output value |
+| :----: | :----------: |
+|   XV   |   ✅ - 15    |
+|  XXIV  |   ✅ - 24    |
+|  XXIX  |   ✅ - 29    |
+| XLIII  |   ✅ - 49    |
+| XCVIII |   ✅ - 98    |
+
+"", 98
 
 > **calculator tests**
 
