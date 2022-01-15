@@ -1,16 +1,19 @@
-from .roman_numerals import roman_numerals_to_integer
+from .roman_numeral_converter import Converter
 from .roman_numerals import integer_to_roman_numerals
 from functools import reduce
 
 class Calculator:
+    def __init__(self):
+        self.values = []
 
-    def add(*args):
-        values = []
+    def add(self, *args):
+        print(args)
 
         for roman_num in args:
-            values.append(roman_numerals_to_integer[roman_num])
+            converter = Converter()
+            self.values.append(converter.convert_roman_num_to_int(roman_num))
         
-        result = reduce(lambda x, y: x+y, values)
+        result = reduce(lambda x, y: x+y, self.values)
 
         if result <= 10:
             return integer_to_roman_numerals[result]
@@ -28,31 +31,29 @@ class Calculator:
                 return result
 
 
-    def multiply(*args):
-        values = []
-        
+    def multiply(self, *args):
+
         for roman_num in args:
-            values.append(roman_numerals_to_integer[roman_num])
+            converter = Converter()
+            self.values.append(converter.convert_roman_num_to_int(roman_num))
         
-        result = reduce(lambda x, y: x*y, values)
+        result = reduce(lambda x, y: x*y, self.values)
         return integer_to_roman_numerals[result]
 
-    def subtract(*args):
-        values = []
+    def subtract(self, *args):
         
         for roman_num in args:
-            values.append(roman_numerals_to_integer[roman_num])
+            converter = Converter()
+            self.values.append(converter.convert_roman_num_to_int(roman_num))
         
-        result = reduce(lambda x, y: x-y, values)
+        result = reduce(lambda x, y: x-y, self.values)
         return integer_to_roman_numerals[result]
 
-    def divide(*args):
-        values = []
+    def divide(self, *args):
         
         for roman_num in args:
-            values.append(roman_numerals_to_integer[roman_num])
+            converter = Converter()
+            self.values.append(converter.convert_roman_num_to_int(roman_num))
         
-        result = reduce(lambda x, y: x/y, values)
+        result = reduce(lambda x, y: x/y, self.values)
         return integer_to_roman_numerals[result]
-
-    
