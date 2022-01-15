@@ -1,4 +1,4 @@
-from src.roman_numerals import roman_numerals_to_integer
+from .roman_numerals import roman_numerals_to_integer
 from functools import reduce
 
 class Converter:
