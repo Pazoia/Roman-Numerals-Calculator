@@ -6,11 +6,8 @@ class Converter:
         self.values = []
 
     def convert_roman_num_to_int(self, roman_num):
-        
-        def split(word):
-            return list(word)
 
-        roman_num_breakdown = split(roman_num)
+        roman_num_breakdown = list(roman_num)
         
         for i in range(len(roman_num_breakdown)):
             if len(roman_num_breakdown) == 0:
